@@ -29,3 +29,16 @@ Arguments:
 ## Installation
 
 Either download the compiled binary from the `/bin` directory or clone this repo and compile the files with either `cargo` or `rustc`.
+
+## Preview
+![2024-06-16_02-16](https://github.com/endvvell/muz.rs/assets/34137807/953a073b-3022-4f0c-b851-bf112b6e737c)
+
+![2024-06-16_02-18](https://github.com/endvvell/muz.rs/assets/34137807/dddf91cf-d3a2-4a8e-8b48-87fc7ea1d705)
+
+![2024-06-16_02-20](https://github.com/endvvell/muz.rs/assets/34137807/5f4e7e76-b2d4-43c3-9f99-0202351ffb5a)
+
+![2024-05-24_13-05](https://github.com/endvvell/muz.rs/assets/34137807/677580a8-fd53-4bfa-ab5d-4f31e363ab19)
+
+![2024-06-16_02-09](https://github.com/endvvell/muz.rs/assets/34137807/16bd75d9-2dd3-4db2-9061-2d82715e89ff)
+
+
