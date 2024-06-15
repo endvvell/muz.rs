@@ -30,7 +30,10 @@ Arguments:
 
 Either download the compiled binary from the `/bin` directory or clone this repo and compile the files with either `cargo` or `rustc`.
 
+
 ## Preview
+(I have an alias `alias muz='muz_rs'` set up. Which is why I'm invoking the script through `muz`)
+
 ![2024-06-16_02-16](https://github.com/endvvell/muz.rs/assets/34137807/953a073b-3022-4f0c-b851-bf112b6e737c)
 
 ![2024-06-16_02-18](https://github.com/endvvell/muz.rs/assets/34137807/dddf91cf-d3a2-4a8e-8b48-87fc7ea1d705)
@@ -41,4 +44,6 @@ Either download the compiled binary from the `/bin` directory or clone this repo
 
 ![2024-06-16_02-09](https://github.com/endvvell/muz.rs/assets/34137807/16bd75d9-2dd3-4db2-9061-2d82715e89ff)
 
+<br/>
 
+---
