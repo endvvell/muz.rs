@@ -1,6 +1,6 @@
 # muz.rs
 
-Anki-like program for learning music theory.
+Anki-like script for learning music theory.
 
 The values for tones, notes, and scales are derived algorithmically, meaning there is no stored value for, say, 5th tone of D♯ Minor scale (A♯), but instead the algorithm goes through the notes in an octave and determines that value.
 
