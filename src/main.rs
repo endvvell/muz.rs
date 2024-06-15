@@ -13,8 +13,6 @@ use std::{
     process::exit,
 };
 
-// No string concat method to produce a static string even when all strings involved are static (memory is known, so wtf? why do I have to allocate new memory? (concat! macro only works with literals, other methods require one of the strings to either be a dynamic String type or be cast to it))
-
 const NATURAL: &str = "\u{266E}";
 const SHARP: &str = "\u{266F}";
 const FLAT: &str = "\u{266D}";
