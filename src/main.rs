@@ -553,7 +553,7 @@ impl<'a> Octave<'a> {
             let user_answer = self.askForAnswer().unwrap(); // TODO: test with empty answer
             println!();
             if user_input_contains_exit_word(&user_answer) {
-                exit(1);
+                exit(0);
             }
             self.give_answer(question, user_answer);
         }
@@ -926,7 +926,7 @@ impl<'a> Octave<'a> {
         // the
         let pause_input = self.askForAnswer().unwrap(); // this might fail? (only if exercise type is not set, or set illogically (to a number which does not represent any exercise))
         if user_input_contains_exit_word(&pause_input) {
-            exit(1);
+            exit(0);
         }
         print!("{}", "\n".repeat(40));
 
@@ -1041,7 +1041,7 @@ impl<'a> Octave<'a> {
         let mut user_input = String::new();
 
         loop {
-            print!("\nChoose exercise:\n1 - Find Tone\n2 - Write Out Scales");
+            println!("\nChoose exercise:\n1 - Find Tone\n2 - Write Out Scales");
             print!("\nExercise: ");
             io::stdout().flush(); // TODO: error handling
             user_input.clear();
@@ -1336,7 +1336,7 @@ fn main() {
 
     if cmd_args.get_cheats {
         octave.give_cheats();
-        exit(1);
+        exit(0);
     }
 
     octave.mut_askExercise();
