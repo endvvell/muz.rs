@@ -633,7 +633,7 @@ impl<'a> Octave<'a> {
         let restart_list_h = index_of_note_in_octave_map + 1 - primary_notes.len() as i32;
         if step == "W" {
             let step = 2;
-            let made_step = self.makeStep(
+            let made_step = self.make_step(
                 all_tones,
                 step,
                 index_of_note_in_octave_map,
@@ -649,7 +649,7 @@ impl<'a> Octave<'a> {
         } else {
             // otherwise the step is always: step == "H"
             let step = 1;
-            let made_step = self.makeStep(
+            let made_step = self.make_step(
                 all_tones,
                 step,
                 index_of_note_in_octave_map,
@@ -666,7 +666,7 @@ impl<'a> Octave<'a> {
     }
 
     // TODO: replace `self.complete_octave.keys().collect::Vec<&String>()` with something like `self.primary_notes` where `primary_notes` is a vector of complete_octave.keys()
-    fn makeStep(
+    fn make_step(
         &self,
         mut all_tones: Vec<String>,
         step: i32,
@@ -847,7 +847,7 @@ impl<'a> Octave<'a> {
 
         let found_answer = self.find_answer(tone_to_find, root_note_of_scale, maj_or_min); // returns: [['E♭', 'F', 'G♭',...], ['D♯', 'F', 'F♯',...]]
 
-        self.check_answer(tone_to_find, user_answer, found_answer.clone()); // TODO: assign variables such as `tone_to_find` to the fields of `self` so you don't have to pass them between the functions
+        self.check_answer(tone_to_find, user_answer, found_answer.clone());
 
         let printable_answer = self.alight_answer(found_answer.0);
 
@@ -891,7 +891,6 @@ impl<'a> Octave<'a> {
                 .0,
             );
 
-            // TODO: replace all the print! with printlns where appropriate
             println!(
                 "{:>width$} {}",
                 "Relative Minor :",
@@ -902,7 +901,7 @@ impl<'a> Octave<'a> {
             // maj_or_min == "minor"
             let rel_major = self.alight_answer(
                 self.find_answer(
-                    -1, // -1 is used in `makeStep` function to avoid printing the "Answer :" line
+                    -1, // -1 is used in `make_step` function to avoid printing the "Answer :" line
                     printable_answer[printable_answer.len() - 6].trim(),
                     "major",
                 )
